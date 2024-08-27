@@ -7,8 +7,9 @@ These "situations" are given by the "states" (1 or 0) of the bit itself, and its
 With 3 seperate variables for any given situation, each having 2 states, gives us our 2^3 (8) possible situations, and 8 needed behaviors.
 The first bit of the behavior number defines what each cell is to do when it is in the first situation, where the bit and both it's neighbors are in the 0 state, or 0-0-0.
 the second bit defines what each cell is to do when it is in the second situation, or 0-0-1, and so forth.
-This experiment applies a rule to itself iteratively, graphing the decimal number corresponding to the rule as it goes.
+This experiment applies a rule to itself iteratively, graphing the decimal number corresponding to the rule as it goes, and having the strip "wrap around"
 It then produces that graph for each "starter" rule and overlays them all atop each other, forming one large graph (plot.png)
 In this graph, the x-axis is the iteration, and the y axis is the decimal value.
-All numbers seem to either fall into one of the many numbers that yield themselves when iterated, or fall into the singular 2-element loop.
-There is also a more colorful graph where each line is given a unique color, although im working on the colormapping right now so it looks quite bad.
+
+This is undoubtedly NOT the best way to visualizing what I've done here, and yields more of a pretty figure than powerful insights.
+Thanks to matplotlib for at least allowing the pretty figure part to be realized.
